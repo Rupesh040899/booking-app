@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Ticket API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Show",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Demo Show\", \"start_time\": \"2025-12-31T18:00:00Z\", \"total_seats\": 40}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/admin/shows"
+        }
+      }
+    },
+    {
+      "name": "List Shows",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/shows"
+        }
+      }
+    }
+  ]
+}
